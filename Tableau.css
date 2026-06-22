@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #f5f7fa;
+}
+
+table {
+  border-collapse: collapse;
+  width: 500px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+td {
+  border: 2px solid #1a3a6b;
+  text-align: center;
+  padding: 20px;
+  font-size: 22px;
+  background: #ffffff;
+  transition: background 0.2s;
+}
+
+td:hover {
+  background: #eef1f7;
+}
+
+/* ── Titre ENEAM ── */
+.enam {
+  font-weight: bold;
+  height: 60px;
+  background: #1a3a6b;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+
+.enam:hover {
+  background: #1a3a6b;  /* pas de hover sur le header */
+}
+
+/* ── Colonne gauche ── */
+.gauche {
+  width: 40%;
+  background: #e8edf5;
+  color: #1a3a6b;
+  font-weight: 600;
+}
+
+/* ── Ligne bas ── */
+.bas {
+  height: 50px;
+}

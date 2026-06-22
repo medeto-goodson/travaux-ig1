@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Tableau</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+table{
+    border-collapse:collapse;
+    width:500px;
+}
+
+td{
+    border:2px solid black;
+    text-align:center;
+    padding:20px;
+    font-size:22px;
+}
+
+.enam{
+    font-weight:bold;
+    height:60px;
+}
+
+.gauche{
+    width:40%;
+}
+
+.bas{
+    height:50px;
+}
+</style>
+    <link rel="stylesheet" href="Tableau.css">
+</head>
+<body>
+
+<table>
+    <tr>
+        <td colspan="3" class="enam">ENEAM</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" class="gauche">IG1-B</td>
+        <td colspan="2">A</td>
+    </tr>
+
+    <tr>
+        <td>B</td>
+        <td>C</td>
+    </tr>
+
+    <tr>
+        <td>EPAC</td>
+        <td colspan="2" class="bas">Programmation</td>
+    </tr>
+</table>
+
+</body>
+</html>

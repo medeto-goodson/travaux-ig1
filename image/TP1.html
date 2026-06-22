@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Page d'accueil</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4fa;
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    .entete {
+      background: #1a3a6b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 24px;
+    }
+
+    .entete .logo {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 6px 12px;
+      height: 55px;
+      width: auto;
+    }
+
+    .entete .message {
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .entete .message h1 {
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+
+    .entete .message p {
+      font-size: 13px;
+      color: #c8d6ed;
+      margin-top: 4px;
+    }
+
+    /* ── CARTE PROFIL ── */
+    .profil-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .carte {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 30px 40px;
+      text-align: center;
+      border: 1px solid #dde3ef;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      display: block;
+      object-fit: cover;
+      border: 3px solid #1a3a6b;
+    }
+
+    .carte h2 {
+      font-size: 20px;
+      color: #1a3a6b;
+      margin-bottom: 4px;
+    }
+
+    .carte .sous-titre {
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+    /* ── INFOS ── */
+    .infos {
+      border-top: 1px solid #eee;
+      padding-top: 16px;
+      text-align: left;
+    }
+
+    .infos .ligne {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #f5f5f5;
+      font-size: 14px;
+    }
+
+    .infos .ligne:last-child {
+      border-bottom: none;
+    }
+
+    .infos .ligne .label {
+      color: #888;
+    }
+
+    .infos .ligne .valeur {
+      font-weight: 500;
+      color: #222;
+    }
+
+    /* ── BOUTON ── */
+    .btn {
+      display: inline-block;
+      margin-top: 22px;
+      background: #1a3a6b;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 28px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+
+    .btn:hover {
+      background: #14305a;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #1a3a6b;
+      color: #c8d6ed;
+      text-align: center;
+      padding: 14px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="entete">
+    <img src="logo_uac.png" alt="Logo UAC" class="logo">
+    <div class="message">
+      <h1>BIENVENUE</h1>
+      <p>Projet réalisé en HTML</p>
+    </div>
+    <img src="logo_eneam.png" alt="Logo ENEAM" class="logo">
+  </div>
+
+  <div class="profil-wrapper">
+    <div class="carte">
+
+      <img src="good.jpg" alt="Photo Goodson" class="avatar">
+
+      <h2>MEDETO Goodson</h2>
+      <p class="sous-titre">Étudiant — ENEAM</p>
+
+      <div class="infos">
+        <div class="ligne">
+          <span class="label">Nom</span>
+          <span class="valeur">MEDETO</span>
+        </div>
+        <div class="ligne">
+          <span class="label">Prénom</span>
+          <span class="valeur">Goodson</span>
+        </div>
+        <div class="ligne">
+          <span class="label">Statut matrimonial</span>
+          <span class="valeur">Célibataire</span>
+        </div>
+      </div>
+
+      <a href="Page1.html" class="btn">Voir mon travail →</a>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2026 MEDETO Goodson — ENEAM
+  </footer>
+  <!-- Lien vers Facebook -->
+<a href="https://www.facebook.com/profile.php?id=61578099670760" target="_blank">
+  <img src="good.png" alt="Facebook" width="60">
+</a>
+<a href="https://www.tiktok.com/@goodson396ken" target="_blank">
+  <img src="tik.png" alt="Tiktok" width="60">
+</a>
+
+</body>
+</html>

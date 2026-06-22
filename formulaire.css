@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+/* ── PAGE CENTRÉE ── */
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px 16px;
+}
+
+/* ── CARTE FORMULAIRE ── */
+.carte {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ── TITRE ── */
+.carte h2 {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.sous-titre {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 24px;
+}
+
+/* ── CHAMPS ── */
+.champ {
+  margin-bottom: 16px;
+}
+
+.champ label {
+  display: block;
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.champ input,
+.champ select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #555;
+  background: #fafafa;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.champ input:focus,
+.champ select:focus {
+  border-color: #6b6b6b;
+  background: #fff;
+}
+
+.champ input::placeholder {
+  color: #bbb;
+}
+
+/* ── CASE CGU ── */
+.cgu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.cgu input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: #6b6b6b;
+}
+
+.cgu label {
+  font-size: 12px;
+  color: #555;
+}
+
+/* ── BOUTON ── */
+.btn-inscrire {
+  width: 100%;
+  background: #6b6b6b;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background 0.2s;
+}
+
+.btn-inscrire:hover {
+  background:  #555555;
+}
+
+body {
+  background: linear-gradient(135deg, #1a3a6b, #0057b8);
+}

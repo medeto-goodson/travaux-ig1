@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Créer un compte</title>
+  <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+
+  <div class="page">
+    <div class="carte">
+
+      <h2>Créer un compte</h2>
+      <p class="sous-titre">Veuillez remplir ce formulaire pour vous inscrire.</p>
+
+      <div class="champ">
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" placeholder="Ex: Medeto goodson">
+      </div>
+
+      <div class="champ">
+        <label for="email">Adresse Email</label>
+        <input type="email" id="email" placeholder="Ex: good.medeto@example.com">
+      </div>
+
+      <div class="champ">
+        <label for="filiere">Filière / Option</label>
+        <select id="filiere">
+          <option value="">Choisissez votre filière</option>
+          <option>Informatique</option>
+          <option>Gestion</option>
+          <option>Finance</option>
+          <option>Marketing</option>
+        </select>
+      </div>
+
+      <div class="champ">
+        <label for="mdp">Mot de passe</label>
+        <input type="password" id="mdp" placeholder="Au moins 8 caractères">
+      </div>
+
+      <div class="cgu">
+        <input type="checkbox" id="conditions">
+        <label for="conditions">J'accepte les conditions d'utilisation</label>
+      </div>
+
+      <button class="btn-inscrire">S'inscrire</button>
+
+    </div>
+  </div>
+
+</body>
+</html>
