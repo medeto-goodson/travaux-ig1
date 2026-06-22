@@ -1,188 +1,239 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
- * { margin: 0; padding: 0; box-sizing: border-box; }
+body{
+  font-family:Arial,sans-serif;
+  background:#f0f4fa;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  padding:20px 10px;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0f4fa;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      padding: 30px 16px;
-    }
+/* =========================
+   CARTE CV
+========================= */
 
-    /* ── CARTE CV ── */
-    .cv {
-      display: grid;
-      grid-template-columns: 220px 1fr;
-      width: 750px;
-      background: #fff;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      height: fit-content;
-    }
+.cv{
+  display:grid;
+  grid-template-columns:220px 1fr;
+  width:100%;
+  max-width:750px;
+  background:#ffffff;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 4px 20px rgba(0,0,0,.1);
+}
 
-    /* ══════════════════════════
-       COLONNE GAUCHE
-    ══════════════════════════ */
-    .gauche {
-      background: #1a3a6b;
-      color: #ffffff;
-      padding: 28px 20px;
-    }
+/* =========================
+   COLONNE GAUCHE
+========================= */
 
-    .photo {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      border: 3px solid #c9a84c;
-      display: block;
-      margin: 0 auto 16px;
-      object-fit: cover;
-      background: #2a5298;
-    }
+.gauche{
+  background:#1a3a6b;
+  color:white;
+  padding:28px 20px;
+}
 
-    .nom {
-      text-align: center;
-      margin-bottom: 24px;
-    }
+.photo{
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  border:3px solid #c9a84c;
+  display:block;
+  margin:0 auto 16px;
+  object-fit:cover;
+  background:#2a5298;
+}
 
-    .nom .prenom {
-      font-size: 17px;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
+.nom{
+  text-align:center;
+  margin-bottom:24px;
+}
 
-    .nom .titre {
-      font-size: 11px;
-      color: #c9a84c;
-      letter-spacing: 1px;
-      margin-top: 4px;
-    }
+.nom .prenom{
+  font-size:17px;
+  font-weight:700;
+  letter-spacing:1px;
+}
 
-    /* Titres sections gauche */
-    .titre-section-gauche {
-      font-size: 11px;
-      letter-spacing: 1.2px;
-      color: #c9a84c;
-      border-bottom: 1px solid #2a5298;
-      padding-bottom: 4px;
-      margin: 20px 0 10px;
-    }
+.nom .titre{
+  font-size:11px;
+  color:#c9a84c;
+  letter-spacing:1px;
+  margin-top:4px;
+}
 
-    /* Contact */
-    .contact-item {
-      font-size: 12px;
-      color: #c8d6ed;
-      line-height: 2;
-    }
+.titre-section-gauche{
+  font-size:11px;
+  letter-spacing:1.2px;
+  color:#c9a84c;
+  border-bottom:1px solid #2a5298;
+  padding-bottom:4px;
+  margin:20px 0 10px;
+}
 
-    /* Langues */
-    .langue {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 12px;
-      color: #c8d6ed;
-      margin-bottom: 8px;
-    }
+.contact-item{
+  font-size:12px;
+  color:#c8d6ed;
+  line-height:2;
+}
 
-    .points {
-      display: flex;
-      gap: 4px;
-    }
+.langue{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:12px;
+  color:#c8d6ed;
+  margin-bottom:8px;
+}
 
-    .point {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.2);
-    }
+.points{
+  display:flex;
+  gap:4px;
+}
 
-    .point.actif {
-      background: #c9a84c;
-    }
+.point{
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:rgba(255,255,255,.2);
+}
 
-    /* Loisirs */
-    .loisir {
-      font-size: 12px;
-      color: #c8d6ed;
-      line-height: 2.2;
-    }
+.point.actif{
+  background:#c9a84c;
+}
 
-    /* ══════════════════════════
-       COLONNE DROITE
-    ══════════════════════════ */
-    .droite {
-      padding: 28px 24px;
-    }
+.loisir{
+  font-size:12px;
+  color:#c8d6ed;
+  line-height:2.2;
+}
 
-    /* Titres sections droite */
-    .titre-section {
-      font-size: 13px;
-      font-weight: 700;
-      color: #1a3a6b;
-      letter-spacing: 2px;
-      border-bottom: 2px solid #1a3a6b;
-      padding-bottom: 5px;
-      margin-bottom: 14px;
-    }
+/* =========================
+   COLONNE DROITE
+========================= */
 
-    .section {
-      margin-bottom: 26px;
-    }
+.droite{
+  padding:28px 24px;
+}
 
-    /* Blocs formation / expérience */
-    .bloc {
-      border-left: 3px solid #c9a84c;
-      padding-left: 12px;
-      margin-bottom: 14px;
-    }
+.titre-section{
+  font-size:13px;
+  font-weight:700;
+  color:#1a3a6b;
+  letter-spacing:2px;
+  border-bottom:2px solid #1a3a6b;
+  padding-bottom:5px;
+  margin-bottom:14px;
+}
 
-    .bloc .poste {
-      font-size: 13px;
-      font-weight: 700;
-      color: #1a3a6b;
-    }
+.section{
+  margin-bottom:26px;
+}
 
-    .bloc .date {
-      font-size: 11px;
-      color: #c9a84c;
-      margin: 2px 0;
-    }
+.bloc{
+  border-left:3px solid #c9a84c;
+  padding-left:12px;
+  margin-bottom:14px;
+}
 
-    .bloc .description {
-      font-size: 12px;
-      color: #555;
-      line-height: 1.6;
-    }
+.bloc .poste{
+  font-size:13px;
+  font-weight:700;
+  color:#1a3a6b;
+}
 
-    /* Barres de compétences */
-    .competence {
-      margin-bottom: 10px;
-    }
+.bloc .date{
+  font-size:11px;
+  color:#c9a84c;
+  margin:2px 0;
+}
 
-    .competence-label {
-      display: flex;
-      justify-content: space-between;
-      font-size: 12px;
-      color: #333;
-      margin-bottom: 4px;
-    }
+.bloc .description{
+  font-size:12px;
+  color:#555;
+  line-height:1.6;
+}
 
-    .competence-label span:last-child {
-      color: #1a3a6b;
-      font-weight: 600;
-    }
+.competence{
+  margin-bottom:10px;
+}
 
-    .barre-fond {
-      background: #e8edf5;
-      border-radius: 4px;
-      height: 7px;
-    }
+.competence-label{
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  color:#333;
+  margin-bottom:4px;
+}
 
-    .barre-remplie {
-      background: #1a3a6b;
-      height: 7px;
-      border-radius: 4px;
-    }
+.competence-label span:last-child{
+  color:#1a3a6b;
+  font-weight:600;
+}
+
+.barre-fond{
+  background:#e8edf5;
+  border-radius:4px;
+  height:7px;
+}
+
+.barre-remplie{
+  background:#1a3a6b;
+  height:7px;
+  border-radius:4px;
+}
+
+/* =========================
+   VERSION MOBILE
+========================= */
+
+@media screen and (max-width:768px){
+
+  body{
+    padding:10px;
+  }
+
+  .cv{
+    grid-template-columns:1fr;
+    width:100%;
+    max-width:100%;
+  }
+
+  .gauche{
+    text-align:center;
+    padding:20px 15px;
+  }
+
+  .droite{
+    padding:20px 15px;
+  }
+
+  .titre-section,
+  .titre-section-gauche{
+    text-align:center;
+  }
+
+  .langue{
+    justify-content:center;
+    gap:10px;
+  }
+
+  .competence-label{
+    flex-direction:column;
+    gap:2px;
+  }
+
+  .photo{
+    width:80px;
+    height:80px;
+  }
+
+  .bloc{
+    padding-left:10px;
+  }
+}
