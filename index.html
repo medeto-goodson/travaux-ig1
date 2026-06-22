@@ -1,45 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Exercice Generale WD</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice du Prof</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
 
-    <div class="header">
-      <img src="logo_uac.png" alt="Logo UAC" class="logo">
-      <span>Bienvenue sur notre site web</span>
-      <img src="logo_eneam.png" alt="Logo ENEAM" class="logo">
-    </div>
+<div class="container">
 
-      <nav class="navbar">
-      <ul>
-        <li class="active"><a href="Page1.html">TP</a></li>
-        <li><a href="Liste.html">Liste</a></li>
-        <li><a href="Tableau.html">Tableau</a></li>
-        <li><a href="formulaire.html">Formulaire</a></li>
-        <li><a href="TP1.html">CV</a></li>
-      </ul>
-    </nav>
+    <!-- En-tête -->
+    <header class="header">
+        <img src="logo_uac.png" alt="Logo UAC" class="logo">
 
-    <div class="menu">
-      <ul>
-        <li class="active"><a href="Page1.html">TP</a></li>
-        <li><a href="Liste.html">Liste</a></li>
-        <li><a href="Tableau.html">Tableau</a></li>
-        <li><a href="formulaire.html">Formulaire</a></li>
-        <li><a href="TP1.html">CV</a></li>
-      </ul>
-    </div>
-    <div class="content">
-    </div>
+        <h1>Bienvenue sur notre site web</h1>
 
-     <footer>
-         © <em>2026 MEDETO Goodson — ENEAM</em>
-     </footer>
+        <img src="logo_eneam.png" alt="Logo ENEAM" class="logo">
+    </header>
 
-  </div>
+    <!-- Menu -->
+    <aside class="menu">
+        <ul>
+            <li><a href="Page1.html" target="contenu">TP</a></li>
+            <li><a href="Liste.html" target="contenu">Liste</a></li>
+            <li><a href="Tableau.html" target="contenu">Tableau</a></li>
+            <li><a href="Formulaire.html" target="contenu">Formulaire</a></li>
+            <li><a href="TP1.html" target="contenu">CV</a></li>
+        </ul>
+    </aside>
+
+    <!-- Zone d'affichage -->
+    <main class="content">
+        <iframe
+            name="contenu"
+            class="frame"
+            src="Page1.html">
+        </iframe>
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        © 2026 ENEAM - Université d'Abomey-Calavi. Tous droits réservés.
+    </footer>
+
+</div>
+
 </body>
 </html>
